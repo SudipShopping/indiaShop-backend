@@ -1,9 +1,3 @@
-"""
-models.py – SQLAlchemy ORM models for IndiaShop
-Tables: users, otps, categories, products, product_images,
-        carts, cart_items, addresses, orders, order_items, reviews
-"""
-
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
