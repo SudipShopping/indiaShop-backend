@@ -1,8 +1,3 @@
-"""
-email.py – Brevo-powered email notifications for IndiaShop
-Handles: OTP (register/verify), password reset, order confirmation, order status update
-"""
-
 import asyncio
 import httpx
 from flask import current_app
