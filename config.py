@@ -1,7 +1,3 @@
-"""
-config.py – IndiaShop Flask Configuration
-"""
-
 import os
 from datetime import timedelta
 
@@ -38,10 +34,8 @@ class Config:
     JWT_HEADER_TYPE           = "Bearer"
 
     # ── Brevo (Email) ──────────────────────────────────────────────────────────
-    BREVO_API_KEY     = os.environ.get(
-        "BREVO_API_KEY",
-        "")
-    SENDER_EMAIL      = os.environ.get("SENDER_EMAIL",  "contact@fliq.us.cc")
+    BREVO_API_KEY     = os.environ.get("BREVO_API_KEY", "")
+    SENDER_EMAIL      = os.environ.get("SENDER_EMAIL",  "")
     SENDER_NAME       = os.environ.get("SENDER_NAME",   "indiaShop")
     OTP_EXPIRE_MINUTES = 15
 
